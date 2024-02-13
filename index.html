@@ -55,18 +55,22 @@
 
   }
 
+  
   if (response === "Yes") {
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "Ти моя бусінка 😘";
+    yesMessage.textContent = "Ти моя бусинка. Запрошую тебе в суботу на сушики 😘";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/kiss.gif";
 
     document.getElementById("yesButton").remove();
+
+    document.body.style.backgroundImage = "url('images/image2.jpg')";
   }
+
 }
     </script>
 </body>
